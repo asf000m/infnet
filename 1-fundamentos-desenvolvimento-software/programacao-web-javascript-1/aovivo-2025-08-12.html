@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Aula</title>
+  </head>
+  <body>
+    <script>
+      // 1
+      let anoNascimento = Number(prompt("Digite seu ano de nascimento"));
+      let anoAtual = 2025
+      let idade = anoAtual - anoNascimento;
+      alert(`Sua idade é ${idade} anos`);
+      // 2
+      let ladoQuadrado = Number(prompt("Digite a medida do lado de um quadrado"));
+      let areaQuadrado = ladoQuadrado ** 2;
+      let perimetroQuadrado = ladoQuadrado * 4;
+      alert(`Área do quadrado: ${areaQuadrado}. Perímetro do quadrado: ${perimetroQuadrado}`);
+      // 3
+      let largura = Number(prompt("Digite a largura do terreno"));
+      let comprimento = Number(prompt("Digite o comprimento do terreno"));
+      let area = largura * comprimento;
+      alert(`Área do terreno: ${area}`);
+      // 4
+      let valorUsuario = prompt("Digite um valor");
+      alert("Tipo de valor digitado: " + typeof valorUsuario);
+    </script>
+  </body>
+</html>

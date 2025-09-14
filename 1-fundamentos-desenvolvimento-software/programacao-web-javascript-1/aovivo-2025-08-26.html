@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ao vivo 2025-08-26</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <script>
+      /* 11- Crie um script que mostre a quantidade de dias do mês informado pelo usuário. Para isto, utilize switch. */
+
+      let mes = Number(prompt("Informe um mês do ano"));
+      let diasMes;
+      let nomeMes;
+      let ano;
+
+      switch (mes) {
+        case 1: case 3: case 5: case 7:
+        case 8: case 10: case 12:
+          diasMes = 31;
+          break;
+
+        case 2:
+          ano = Number(prompt("Informe o ano"));
+          if (ano % 400 === 0 || ano % 4 === 0 && ano % 100 !== 0) {
+            diasMes = 29;
+          } else {
+            diasMes = 28;
+          }
+          break;
+
+        case 4: case 6: case 9: case 11:
+          diasMes = 30;
+        
+        default:
+          break;
+      }
+
+      switch (mes) {
+        case 1:
+          nomeMes = "janeiro";
+          break;
+        case 2:
+          nomeMes = "fevereiro";
+          break;
+        case 3:
+          nomeMes = "março";
+          break;
+        case 4:
+          nomeMes = "abril";
+          break;
+        case 5:
+          nomeMes = "maio";
+          break;
+        case 6:
+          nomeMes = "junho";
+          break;
+        case 7:
+          nomeMes = "julho";
+          break;
+        case 8:
+          nomeMes = "agosto";
+          break;
+        case 9:
+          nomeMes = "setembro";
+          break;
+        case 10:
+          nomeMes = "outubro";
+          break;
+        case 11:
+          nomeMes = "novembro";
+          break;
+        case 12:
+          nomeMes = "dezembro";
+          break;
+        default:
+          break;
+      }
+
+      let mensagem = mes === 2 ? `${nomeMes} de ${ano} tem ${diasMes} dias` : `${nomeMes} tem ${diasMes} dias`;
+
+      if (mes >= 1 && mes <= 12) {
+        alert(mensagem);
+      } else {
+        alert("Opção inválida");
+      }
+    </script>
+  </body>
+</html>

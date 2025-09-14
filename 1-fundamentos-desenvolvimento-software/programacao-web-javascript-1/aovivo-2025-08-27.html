@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ao vivo 2025-08-27</title>
+  </head>
+  <body>
+    <script>
+      /* 10 - Uma empresa que faz locação de equipamentos de limpeza solicitou 
+      o seu apoio para desenvolver um software capaz de calcular o total a pagar 
+      por uma locação segundo o equipamento alugado, a quantidade de dias de 
+      aluguel e amulta por atraso. Para isso, o usuário deve informar o código 
+      do equipamento, a quantidade de dias de aluguel e a quantidade de dias total
+      em que utilizou o equipamento.
+      
+      Código - Equipamento - valor da diária:
+      E001 - aspirador de pó industrial - R$ 80,00
+      E002 – andaime para limpeza - R$ 120,00
+      E003 – Vassoura – R$5,00
+      
+      Multa:
+      2% por dia de atraso */
+
+      let e001 = "E001 - aspirador de pó industrial - R$ 80,00"
+      let e002 = "E002 - andaime para limpeza - R$ 120,00"
+      let e003 = "E003 - vassoura - R$ 5,00"
+      
+      let codigoEquip = prompt(`Informe o código do equipamento:\n${e001}\n${e002}\n${e003}`).toLowerCase();
+      let diasLocacao = Number(prompt("Informe a quantidade de dias de locação planejados"));
+      let diasUsados = Number(prompt("Informe a quantidade de dias usados no total"));
+
+      let diasUltrapassados = diasUsados > diasLocacao ? diasUsados - diasLocacao : 0;
+      let totalPagar;
+      let valorMulta;
+      
+      switch (codigoEquip) {
+        case "e001":
+          valorMulta = diasUltrapassados * (80 * 0.02);
+          totalPagar = diasUsados * 80 + valorMulta;
+          alert(`Valor total a pagar: ${totalPagar}`);
+          break;
+        case "e002":
+          valorMulta = diasUltrapassados * (120 * 0.02);
+          totalPagar = diasUsados * 120 + valorMulta;
+          alert(`Valor total a pagar: ${totalPagar}`);
+          break;
+        case "e003":
+          valorMulta = diasUltrapassados * (5 * 0.02);
+          totalPagar = diasUsados * 5 + valorMulta;
+          alert(`Valor total a pagar: ${totalPagar}`);
+          break
+        default:
+          alert("Código do equipamento inválido.");
+          break;
+      }
+    </script>
+  </body>
+</html>

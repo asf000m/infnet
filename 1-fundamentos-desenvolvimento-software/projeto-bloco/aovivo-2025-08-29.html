@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ao vivo 2025-08-29</title>
+  </head>
+  <body>
+    <script>
+      let media = 5.5;
+
+      if (media >= 6) {
+        console.log("Aprovado");
+      } else if (media >= 5) {
+        console.log("Recuperação");
+      } else {
+        console.log("Reprovado");
+      } 
+
+      let valor;
+      let tamanho = prompt("Digite o tamanho da camisa:\nP\nM\nG").toLowerCase();
+
+      switch (tamanho) {
+        case "p":
+          valor = 20;
+          break;
+        case "m":
+          valor = 30;
+          break;
+        case "g":
+          valor = 40;
+          break;
+        default: 
+          console.log("Tamanho incorreto");
+      }
+      console.log(valor);
+    </script>
+  </body>
+</html>

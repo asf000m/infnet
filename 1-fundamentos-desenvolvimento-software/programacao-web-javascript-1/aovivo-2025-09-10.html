@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ao vivo 2025-09-10</title>
+  </head>
+  <body>
+    <h1 id="titulo1">O Butaum</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro itaque nihil voluptatibus optio aut non sapiente illo atque tempora natus, laudantium fugit veniam autem quidem. Dolores est ipsam rerum.</p>
+    <input type="text" id="nome">
+    <input type="button" value="Mensagem" onclick="mensagem()">
+    <hr>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum harum quas molestias iusto fuga eum, odit repudiandae molestiae nemo eius sint soluta quia! Deserunt eum impedit aliquid dolore doloribus?</p>
+    <input type="number" id="ladoQuadrado">
+    <input type="button" value="Área e Perímetro" onclick="areaPerimetro()">
+    <script>
+      /* 1. Crie uma página que receba o nome do usuário e 
+      disponibilize um botão para exibir uma mensagem de boas
+      vindas personalizada com o nome do usuário. */
+
+      function mensagem() {
+        let nome = document.querySelector("#nome").value;
+        alert(`Bem-vindo(a), ${nome}!`);
+      }
+
+      /* 2. Crie uma página que receba a medida do lado do 
+      quadrado e disponinilize um botão para calcular a área
+      e o perímetro desse quadrado. */
+
+      function areaPerimetro() {
+        let ladoQuadrado = document.querySelector("#ladoQuadrado").value;
+        let area = ladoQuadrado ** 2;
+        let perimetro = ladoQuadrado * 4;
+        alert(`A área é ${area} e o perímetro é ${perimetro}`);
+      }
+    </script>
+  </body>
+</html>

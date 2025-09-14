@@ -1,0 +1,30 @@
+.card {
+  width: 50vw;
+  height: 50vh;
+  background-color: aliceblue;
+  border: 2px solid darkblue;
+  border-radius: 3px;
+  box-shadow: 2px 2px 8px 2px grey;
+}
+  .card:hover {
+    cursor: pointer;
+    border: 3px solid blue;
+  }
+  #card-title {
+  color: darkblue;
+  background-color: cornsilk;
+  font-style: italic;
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  text-align: center;
+  }
+section {
+  padding: 1em;
+}
+.fakeImg {
+  width: 33%;
+  height: 33%;
+  background-color: aqua;
+  margin: auto;
+}
