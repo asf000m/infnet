@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ao vivo 2025-09-22</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* # Header -------------------- */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px;
+        color: black;
+        background-color: lightgray;
+
+        img {
+          width: 175px;
+          height: 100px;
+        }
+      }
+
+      /* # Nav -------------------- */
+      nav {
+        .menu-item {
+          display: none;
+      }
+      }
+
+      @media (min-width: 1200px) {
+        #menu {
+          display: flex;
+          align-items: center;
+          gap: 94px;
+        }
+
+        #menu-bar {
+          display: none;
+        }
+        .menu-item {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- # Header -------------------- -->
+    <header>
+      <img class="logo-mobile" src="https://kenbrakke.com/opaque/opaqsqX.gif" alt="logo">
+      <!-- # Nav -------------------- -->
+      <nav id="menu">
+        <svg id="menu-bar" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        <a class="menu-item" href="#">Home</a>
+        <a class="menu-item" href="#">Products</a>
+        <a class="menu-item" href="#">FAQ</a>
+        <a class="menu-item" href="#">Contact</a>
+      </nav>
+    </header>
+
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ao vivo 2025-09-15</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body,
+      header,
+      main,
+      footer {
+        background-color: #dad7cd;
+        color: #344e41;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        padding: 0 40px;
+        #logo img {
+          height: 75px;
+        }
+      }
+
+      nav {
+        width: 60%;
+        ul {
+          display: flex;
+          list-style: none;
+          
+          .itemMenu {
+            a {
+              padding: 5px 20px;
+              /* text-decoration: none; */
+              font-size: 1.5em;
+              color: #588157;
+
+              &:hover {
+                color: white;
+                background-color: #3a5a40;
+              }
+            }
+          }
+        }
+      }
+
+      main {
+        display: flex;
+        height: calc(100vh - 260px);
+        
+        aside {
+          width: 20%;
+        }
+
+        section {
+          width: 80%;
+        }
+      }
+
+      footer {
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="logo-lorem-ipsum.jpg" alt="logo">
+      </div>
+      <nav>
+        <ul>
+          <li class="itemMenu"><a href="#">Link</a></li>
+          <li class="itemMenu"><a href="#">Link</a></li>
+          <li class="itemMenu"><a href="#">Link</a></li>
+          <li class="itemMenu"><a href="#">Link</a></li>
+          <li class="itemMenu"><a href="#">Link</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>aside</aside>
+      <section>section</section>
+    </main>
+    <footer>
+      footer
+    </footer>
+  </body>
+</html>

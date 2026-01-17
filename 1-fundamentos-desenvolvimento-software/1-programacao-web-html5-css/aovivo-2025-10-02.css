@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100dvh;
+  width: 100dvw;
+  border: 5px solid dimgray;
+
+}
+.child {
+  width: 250px;
+  height: 250px;
+  background-color: lightgray;
+  border: 1px solid gray;
+}
