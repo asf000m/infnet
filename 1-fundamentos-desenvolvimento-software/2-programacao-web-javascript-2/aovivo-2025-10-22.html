@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ao vivo 2025-10-22</title>
+</head>
+<body>
+  <script>
+    let counter = 1;
+    while (counter <= 100) {
+      if (counter % 3 === 0) {
+        console.log(counter);
+      }
+      counter++;
+    }
+
+    // 1.
+    let answer = true;
+    let i = 0;
+    while (answer) {
+      answer = confirm('Deseja continuar o programa?');
+      i++;
+      console.log(i);
+    }
+    // 2.
+    let number = Number(prompt('Escolha um número para a tabuada'));
+    let fator = 1;
+    while (fator <= 9) {
+      console.log(`${number} x ${fator} = ${number * fator}`);
+      fator++;
+    }
+
+    // 3.
+    
+    // 4.
+    let primeiro = Number(prompt('Digite o primeiro número'));
+    let razao = Number(prompt('Digite a razão'));
+    let pa = [];
+    for (let i = 1; i <= 10; i++) {
+      pa.push(primeiro + (i -  1) * razao);
+    }
+    console.log(pa);
+  </script>
+</body>
+</html>

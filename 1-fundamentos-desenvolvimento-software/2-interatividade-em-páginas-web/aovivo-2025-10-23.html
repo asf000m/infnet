@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .imagem {
+      height: 300px;
+    }
+    .dark {
+      color: azure;
+      background-color: black;
+    }
+    .grayscale {
+      filter: grayscale(100);
+    }
+    .hide {
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+  <p>1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, dolore consequatur. Dolor nobis odio veritatis iusto repudiandae earum eos, quos nemo possimus sint ullam quas quibusdam suscipit aliquam totam est!</p>
+  <p>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsa provident, hic tempora non iste odit aliquam consequuntur corporis quasi! Ad esse aut mollitia et alias consequatur error magnam perferendis.</p>
+  <p>3. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, recusandae. Unde laborum atque voluptate odit ratione officia molestias cum pariatur, modi deleniti accusamus aut, accusantium voluptatibus, totam quas maiores itaque.</p>
+  <img class="imagem" src="https://cdn.pixabay.com/photo/2023/04/04/07/56/birds-7898729_1280.jpg" alt="img">
+  
+  <section>
+    <button>Enviar 1</button>
+    <button id="btn-imagem">Imagem</button>
+    <!-- <button onclick="myEvent()">Enviar 1</button> -->
+
+    <!-- <input type="button" value="Enviar 2">
+    <input type="submit" value="Enviar 3"> -->
+  </section>
+  <script>
+    function myEvent() {
+      alert('Cliquei no botão com atributo!');
+    }
+
+    let botao = document.querySelector('button');
+    let imagem = document.querySelector('.imagem');
+    let btnImagem = document.querySelector('#btn-imagem');
+    
+    // botao.onclick = function() {
+    //   alert('Cliquei no botão com atributo,\n de novo!');
+    // }
+
+    botao.addEventListener('click', function() {
+      document.body.classList.toggle('dark');
+      imagem.classList.toggle('grayscale');
+    })
+    btnImagem.addEventListener('click', function() {
+      imagem.classList.toggle('hide');
+    })
+    console.log(botao);
+  </script>
+</body>
+</html>
