@@ -170,7 +170,7 @@ Sistemas Operacionais com Linux e Python:
 * Gerenciar aplicativos, pacotes, containers e sistemas de inicialização no Linux, utilizando a linha de comando
 * Desenvolver programas simples em Python com paralelismo, utilizando a linha de comando
 
-Estruturas de Dados e Algoritmos Avançados: 
+Estruturas de Dados e Algoritmos Avançados:
 
 * Utilizar as estruturas de dados heaps e tries
 * Utilizar a estrutura de dados grafos (graphs)
